@@ -1,4 +1,6 @@
-
+## Twitter Bot
+- @PlotBot24 takes requests from other users and performs a visual sentiment analysis on the requested user.
+- Disclaimer: This is solely for educational purposes and was inspired by @PlotBot5.
 
 ```python
 # Dependencies
@@ -25,7 +27,7 @@ auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth, parser=tweepy.parsers.JSONParser())
 ```
 
-
+# Create a Sentiment Analysis Function
 ```python
 def s_analyze():
     """Perform sentiment analysis on requested account"""
@@ -125,7 +127,7 @@ def s_analyze():
         print(msg)
 ```
 
-
+# Deploy the Bot
 ```python
 # Set timer to run PlotBot24 every 5 minutes (300 seconds) for 24 hours
 t_end = time.time() + 3600 * 24
