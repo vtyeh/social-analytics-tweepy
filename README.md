@@ -15,7 +15,7 @@ import time
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 analyzer = SentimentIntensityAnalyzer()
 
-# Import api keys
+# Twitter API Keys
 from config import (consumer_key, consumer_secret, 
                     access_token, access_token_secret)
 
